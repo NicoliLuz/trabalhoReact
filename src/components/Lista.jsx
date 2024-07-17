@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Lista.css"; 
 
-function myLista({ adicao, removeAdicao }) {
+function Lista({ adicao, removeAdicao }) {
  return (
 <ul>
      {adicao.map((adicao, index) => (
@@ -13,4 +13,4 @@ function myLista({ adicao, removeAdicao }) {
 </ul>
  );
 }
-export default myLista;
+export default Lista;
