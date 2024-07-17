@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Lista'; /* arrumar */
+import './Forms.css'; 
 
 function myForms ({ adicionar }) {
     const [add, setAdd] = useState('');
