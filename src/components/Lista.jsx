@@ -1,16 +1,10 @@
 import React from 'react';
-import "./Lista.css"; 
+import "./Lista.css";
+import Item from "./Item"
 
 function Lista({ adicao, removeAdicao }) {
- return (
-<ul>
-     {adicao.map((adicao, index) => (
-<li key={index}>
-         {adicao}
-<button onClick={() => removeAdicao(index)}>Remover</button>
-</li>
-     ))}
-</ul>
- );
+     return (
+          <Item adicao={adicao} removeAdicao={removeAdicao} />
+     );
 }
 export default Lista;

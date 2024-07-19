@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Forms from './components/Forms';
 import Lista from './components/Lista';
 import './App.css';
+import Item from './components/Item';
  
 function App() {
   const [adicionarPrato, setAdicionarPrato] = useState([]);
@@ -16,11 +17,11 @@ function App() {
   };
  
   return (
-<div className="app">
-<h1>Lista de Pratos Favoritos</h1>
-<Forms adicionar={adicionar} />
-<Lista adicao={adicionarPrato} removeAdicao={removeAdicao} />
-</div>
+    <div className="app"> 
+      <h1>Lista de Pratos Favoritos</h1>
+      <Forms adicionar={adicionar} />
+      <Lista adicao={adicionarPrato} removeAdicao={removeAdicao}/>
+    </div>
   );
 }
  
